@@ -1,0 +1,78 @@
+/* Full Menu Styles */
+.full-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.menu-category {
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.category-title {
+  color: var(--color-primary);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.category-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.menu-item-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.menu-item-price {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.menu-item-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* GrabFood Button overrides */
+.btn-grab {
+  background-color: transparent;
+  color: #00B14F;
+  border-color: #00B14F;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-grab:hover {
+  background-color: rgba(0, 177, 79, 0.1);
+  border-color: #00B14F;
+  transform: translateY(-2px);
+}

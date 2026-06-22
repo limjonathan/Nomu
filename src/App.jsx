@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import FullMenu from './components/FullMenu';
+import Reviews from './components/Reviews';
+import './components/styles.css';
 
 function App() {
   
@@ -45,7 +48,15 @@ function App() {
         <div className="hero-content">
           <h1 className="hero-title">A Symphony of Flavors</h1>
           <p className="hero-subtitle">Japanese Creative Fusion Cafe & Bistro in Surabaya</p>
-          <a href="#menu" className="btn">Explore Menu</a>
+          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="#full-menu" className="btn">Explore Menu</a>
+            <a href="https://food.grab.com/id/en/restaurant/nomu-cafe-and-bistro-plaza-graha-famili-delivery/6-C3EDN2XCTYUZHA?sourceID=20240709_172632_F2CB0C680C51415DB6B27D5E6B3389B6_MEXMPS" target="_blank" rel="noopener noreferrer" className="btn btn-grab">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm-1.8 17.514a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm0-5.814a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm3.6-1.129a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6z" fill="#00B14F"/>
+              </svg>
+              Order on GrabFood
+            </a>
+          </div>
         </div>
       </section>
 
@@ -89,6 +100,12 @@ function App() {
         </div>
       </section>
 
+      {/* Full Menu Section */}
+      <FullMenu />
+
+      {/* Reviews Section */}
+      <Reviews />
+
       {/* Info Section */}
       <section id="visit" className="info-section">
         <div className="info-grid reveal">
@@ -109,6 +126,13 @@ function App() {
                 <div>
                   <strong>Instagram</strong>
                   <p><a href="https://www.instagram.com/_justnomu" target="_blank" rel="noopener noreferrer">@_justnomu</a></p>
+                </div>
+              </div>
+              <div className="info-item">
+                <span className="info-icon">🛵</span>
+                <div>
+                  <strong>Delivery</strong>
+                  <p><a href="https://food.grab.com/id/en/restaurant/nomu-cafe-and-bistro-plaza-graha-famili-delivery/6-C3EDN2XCTYUZHA" target="_blank" rel="noopener noreferrer" style={{ color: '#00B14F', fontWeight: '500' }}>Order via GrabFood</a></p>
                 </div>
               </div>
             </div>
