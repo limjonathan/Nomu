@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const menuData = [
   {
@@ -101,6 +101,8 @@ const menuData = [
 ];
 
 const FullMenu = () => {
+  const [activeCategory, setActiveCategory] = useState(menuData[0].category);
+
   return (
     <section id="full-menu" className="section reveal" style={{ backgroundColor: 'var(--color-bg)' }}>
       <div className="section-header">
@@ -112,10 +114,23 @@ const FullMenu = () => {
         </p>
       </div>
       
-      <div className="full-menu-grid">
-        {menuData.map((section, idx) => (
-          <div key={idx} className="menu-category">
-            <h3 className="category-title">{section.category}</h3>
+      {/* Menu Categories Tabs */}
+      <div className="menu-tabs-container">
+        {menuData.map((section) => (
+          <button
+            key={section.category}
+            className={`menu-tab ${activeCategory === section.category ? 'active' : ''}`}
+            onClick={() => setActiveCategory(section.category)}
+          >
+            {section.category}
+          </button>
+        ))}
+      </div>
+
+      <div className="full-menu-grid categorized-view">
+        {menuData.filter(section => section.category === activeCategory).map((section, idx) => (
+          <div key={idx} className="menu-category glass-panel fade-in">
+            <h3 className="category-title text-gradient">{section.category}</h3>
             <ul className="category-items">
               {section.items.map((item, itemIdx) => (
                 <li key={itemIdx} className="menu-item-row">
