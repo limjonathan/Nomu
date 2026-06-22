@@ -3,6 +3,7 @@ import './App.css';
 import FullMenu from './components/FullMenu';
 import Reviews from './components/Reviews';
 import './components/styles.css';
+import nomuLogo from './assets/nomulogo.webp';
 
 function App() {
   
@@ -32,7 +33,7 @@ function App() {
       {/* Navigation */}
       <nav className="header">
         <div className="logo-container">
-          <img src="/logo.jpg" alt="NOMU Logo" className="logo-img" />
+          <img src={nomuLogo} alt="NOMU Logo" className="logo-img" />
           <span className="logo-text">NOMU</span>
         </div>
         <div className="nav-links">
