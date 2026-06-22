@@ -30,6 +30,10 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Ambient Glow Orbs */}
+      <div className="ambient-orb orb-1"></div>
+      <div className="ambient-orb orb-2"></div>
+      
       {/* Navigation */}
       <nav className="header">
         <div className="logo-container">
@@ -47,7 +51,7 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-bg"></div>
         <div className="hero-content">
-          <h1 className="hero-title">A Symphony of Flavors</h1>
+          <h1 className="hero-title text-gradient">A Symphony of Flavors</h1>
           <p className="hero-subtitle">Japanese Creative Fusion Cafe & Bistro in Surabaya</p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#full-menu" className="btn">Explore Menu</a>
@@ -64,7 +68,7 @@ function App() {
       {/* Highlights Section */}
       <section id="menu" className="section reveal">
         <div className="section-header">
-          <h2 className="section-title">Signature Dishes</h2>
+          <h2 className="section-title text-gradient">Signature Dishes</h2>
         </div>
         <div className="menu-grid">
           
@@ -111,7 +115,7 @@ function App() {
       <section id="visit" className="info-section">
         <div className="info-grid reveal">
           <div className="info-content">
-            <h2>Experience NOMU</h2>
+            <h2 className="text-gradient">Experience NOMU</h2>
             <p>NOMU is more than just a dining destination; it is an exploration of culinary artistry. We blend traditional Japanese techniques with bold Western influences to create a menu that is both familiar and exciting.</p>
             
             <div className="info-details">

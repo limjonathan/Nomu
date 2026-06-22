@@ -55,7 +55,7 @@ const Reviews = () => {
   return (
     <section id="reviews" className="section reveal" style={{ backgroundColor: 'var(--color-bg)' }}>
       <div className="section-header">
-        <h2 className="section-title">What Our Guests Say</h2>
+        <h2 className="section-title text-gradient">What Our Guests Say</h2>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '1rem' }}>
           <span style={{ fontSize: '1.5rem', color: '#fbbc04' }}>★★★★★</span>
           <span style={{ fontSize: '1.2rem', fontWeight: '600' }}>5.0 on Google Maps</span>

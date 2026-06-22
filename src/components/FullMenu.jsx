@@ -104,7 +104,7 @@ const FullMenu = () => {
   return (
     <section id="full-menu" className="section reveal" style={{ backgroundColor: 'var(--color-bg)' }}>
       <div className="section-header">
-        <h2 className="section-title">Full Menu</h2>
+        <h2 className="section-title text-gradient">Full Menu</h2>
         <p style={{ color: 'var(--color-text-muted)', textAlign: 'center', maxWidth: '600px', margin: '0 auto 2rem' }}>
           Explore our complete selection of Japanese Creative Fusion dishes.
           <br/>
