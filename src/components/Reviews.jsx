@@ -18,6 +18,36 @@ const reviewsData = [
     rating: 5,
     text: "My favorite spot in Surabaya for Japanese fusion. The Dutch pancakes are a must-try. Everything from the presentation to the taste is a 10/10.",
     date: "3 months ago"
+  },
+  {
+    name: "Amanda K.",
+    rating: 5,
+    text: "Very cozy and highly aesthetic cafe! I loved the photobooth inside. The Super Matcha 2.0 and Dry Udon are absolute game-changers. Definitely worth the price.",
+    date: "2 months ago"
+  },
+  {
+    name: "David C.",
+    rating: 5,
+    text: "Came here on a weekday afternoon to avoid the weekend crowd. The Shiopan (Salt Bread) is the best I've ever had. Such a unique fusion menu that you can't find elsewhere in Surabaya.",
+    date: "1 week ago"
+  },
+  {
+    name: "Evelyn R.",
+    rating: 5,
+    text: "10/10 experience! The ingredients are so fresh and high-quality. We ordered the Kabocha Ume and the Salmon Carpaccio to share, and both were incredibly flavorful.",
+    date: "4 months ago"
+  },
+  {
+    name: "Budi S.",
+    rating: 5,
+    text: "A premium dining experience. Yes, it's on the pricier side, but the quality justifies it. The Wagyu Striploin melted in my mouth. Great warm ambient lighting too.",
+    date: "3 weeks ago"
+  },
+  {
+    name: "Clarissa M.",
+    rating: 5,
+    text: "The perfect place for photoshoots and great food! Every corner is instagrammable. Don't leave without trying their homemade baked goods, especially the matcha cookie.",
+    date: "1 month ago"
   }
 ];
 
